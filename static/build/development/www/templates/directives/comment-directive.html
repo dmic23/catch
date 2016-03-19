@@ -1,0 +1,11 @@
+<div class="item">
+	<button class="button" ng-click="vm.ShowCommentBox = ! vm.ShowCommentBox">Comment!</button>
+	<div class="" ng-show="vm.ShowCommentBox">
+		<form novalidate>
+			<label class="item item-input">
+				<textarea class="" placeholder="add a comment" ng-model="vm.comment.comment"></textarea>
+			</label>
+			<button class="button button-outline button-calm" ng-click="addNewComment(vm.comment, moment.id)">Post Comment</button>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+	<h1 class="u-full-width" ui-sref="app.feed">Nonce</h1>
+	<div class="three colums">
+		<img ng-src={{fbUser.picture.data.url}}>
+	</div>
+	<p class="two columns">{{fbUser.first_name}} {{fbUser.last_name}}</p>
+
+	<a class="button button-primary" ui-sref="app.capture">Capture</a>
+	<a class="button button-primary" ui-sref="app.map">Map</a>
+</div>
+
+<div class="view-container" ui-view-container>
+
+  <section ui-view id="content" autoscroll="false"></section>
+
+</div>

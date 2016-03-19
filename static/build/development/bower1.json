@@ -1,0 +1,23 @@
+{
+  "name": "Nonce",
+  "version": "0.0.0",
+  "authors": [
+    "Daniel Micaletti <danielmicaletti@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.4.8",
+    "angular-bootstrap": "~0.14.3",
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.15",
+    "angular": "1.4.8",
+    "ng-file-upload": "~11.0.0"
+  }
+}

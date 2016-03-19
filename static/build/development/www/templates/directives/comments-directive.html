@@ -1,0 +1,8 @@
+<ion-content>
+	<ion-item class="row" collection-repeat="comment in momentComment track by $index" item-width="'100%'" item-height="'auto'">
+		<img class=""ng-src="{{comment.comment_by.fb_data.fb_pic}}" width="50" height="auto" >
+		<p class="">{{comment.comment_by.username}}</p>
+		<p class="">{{comment.comment_date | date: "MMM d, y h:mm a"}}</p>
+		<p class="">{{comment.comment}}</p>
+	</ion-item>
+</ion-content>

@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <p class="pull-right"><a href ng-click="cancel()">X</a></p>
+    <h3 class="modal-title">Location</h3>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <h4>Choose your location</h4>
+            <ul>
+        		<li ng-repeat="loc in vm.locations_list">
+        			<a href="javascript:void(0)" ng-click="ok(loc);">{{loc.name}}, {{loc.vicinity}}</a>
+        		</li>
+            </ul>
+        </div>
+    </div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="cancel()"><i class="fa fa-arrow-left"></i> Return</button>
+    <button ng-click="cancel()" class="btn btn-default"> close</button>
+</div>

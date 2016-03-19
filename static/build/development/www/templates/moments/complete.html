@@ -1,0 +1,34 @@
+<div class="row">
+	<h1 class="u-full-width">Complete</h1>
+	<a class="button" ui-sref="app.edit">Back</a>
+</div>
+<div class="booth">
+	<canvas id="cnvs" width="400" height="300"></canvas>
+</div>
+
+<div class="row">
+	<form class="form-validation" name="completeForm" enctype="multipart/form-data" ng-submit="vm.postMoment();" novalidate>
+		
+		<div class="four columns offset-by-four">
+			<label class="">Caption</label>
+			<textarea class="u-full-width" placeholder="say something about your moment" ng-model="vm.newMoment.caption"></textarea>
+		</div>
+		<div class="four columns offset-by-four">
+			<label class="">Location</label>
+			<button type="button" ng-click="open('lg')">modal</button>
+			<p class="u-full-width" ng-show="vm.newMoment.loc_name">{{vm.newMoment.loc_name}}, {{vm.newMoment.loc_vicinity}}</p>
+			<div id="placesList"></div>
+			
+		</div>
+		<div class="four columns offset-by-four">
+			<label class="">Tag Friends</label>
+			<div ng-repeat="friend in user.following">
+				<a href="javascript:void(0)" ng-click="vm.addTag(friend)">{{friend.first_name}} {{friend.last_name}}</a>
+			</div>
+			
+		</div>
+		<div class="four columns offset-by-four">
+			<button class="button button-primary u-full-width" type="submit">Post</button>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,53 @@
+<ion-content class="">
+	<ion-item class="padding-none border-none moment-feed" collection-repeat="moment in vm.moments">
+		<ion-item class="item-image full-image">
+			<div class="moment-header row">
+				<p class="col col-33">{{moment.username}}</p>
+				<p class="col col-33 col-offset-33">{{moment.moment_created | date: "MMM d, y h:mm a"}}</p>				
+			</div>
+
+			<img ng-src="{{moment.image}}" width="100%" height="auto" />
+
+			<div class="moment-footer">
+				<p class="">{{moment.caption}}</p>
+				<p class="">{{moment.moment_like.length}}</p>
+				<like moment="moment" user="user"></like>
+				
+			</div>
+		</ion-item>
+	</ion-item>
+</ion-content>
+<!-- <div class="row" collection-repeat="moment in vm.moments">
+
+	<div class="four columns offset-by-four">
+		<h4 class="u-full-width">{{moment.username}}</h4>
+		<p class="u-full-width">{{moment.moment_created | date: "MMM d, y h:mm a"}}</p>		
+		<img ng-src="{{moment.image}}" width="400" height="auto" />
+		<p class="u-full-width">{{moment.caption}}</p>
+		<label class="three columns">Likes</label>
+		<p class="three columns">{{moment.moment_like.length}}</p>
+		<like moment="moment" user="user"></like>
+		<comment add-comment="vm.addComment()" moment="moment"></comment>
+		<label class="u-full-width">All Comments :</label>
+		<div class="row" ng-repeat="comment in moment.moment_comment track by $index">
+			<img class="two columns"ng-src="{{comment.comment_by.fb_data.fb_pic}}" width="50" height="auto" >
+			<p class="ten columns">{{comment.comment_by.username}}</p>
+			<p class="u-full-width">{{comment.comment_date | date: "MMM d, y h:mm a"}}</p>
+			<p class="u-full-width">{{comment.comment}}</p>
+		</div>
+	</div> 
+
+
+			<ion-item class="item-text-wrap">
+			
+		</ion-item>
+
+
+						<label class="">Likes</label>
+				<p class="">{{moment.moment_like.length}}</p>
+				<like moment="moment" user="user"></like>
+				<comment add-comment="vm.addComment()" moment="moment"></comment>
+				<label class="">All Comments :</label>
+				<comments moment-comment="moment.moment_comment"></comments>
+	
+</div> -->

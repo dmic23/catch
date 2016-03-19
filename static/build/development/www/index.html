@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Catch</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,200italic' rel='stylesheet' type='text/css'>
+
+    <link href="/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="/lib/ionic/js/ionic.bundle.js"></script>
+<!--     <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+ -->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+  </head>
+  <body ng-app="nonce">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+<!--     <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar> -->
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+
+
+    <ion-nav-view></ion-nav-view>
+
+    <script>
+      var staticUrl = '/static/build/development/';
+      console.log(staticUrl);
+      var mediaUrl  = '/static/build/development/media/uploads/';
+      console.log(mediaUrl);
+
+      function static_path(path) {
+        return staticUrl + path;
+      }
+
+      function media_path(path) {
+        return mediaUrl + path;
+      }
+  </script>
+    <!-- your app's js -->
+  <script src="/lib/underscore-min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6i50VpAIjCrOW9zV8eiAg9MMDPypvZRg&libraries=places"></script>
+
+  <!-- app -->
+  <script src="/js/nonce.js" ></script>
+  <script src="/js/nonce.config.js" ></script>
+  <script src="/js/nonce.routes.js" ></script>
+  <!-- main -->
+  <script src="/js/main/main.module.js" ></script>
+  <script src="/js/main/services/main.services.js" ></script>
+  <script src="/js/main/controllers/app.controller.js" ></script>
+  <script src="/js/main/controllers/main.controller.js" ></script>
+  <script src="/js/main/controllers/authentication.controller.js" ></script>
+  <script src="/js/main/controllers/moment-map.controller.js" ></script>
+  <script src="/js/main/controllers/modal.controller.js" ></script>
+  <!-- moments -->
+  <script src="/js/moments/moments.module.js" ></script>
+  <script src="/js/moments/services/moments.services.js" ></script>
+  <script src="/js/moments/controllers/moments.controller.js" ></script>
+  <script src="/js/moments/controllers/capture.controller.js" ></script>
+  <script src="/js/moments/controllers/edit.controller.js" ></script>
+  <script src="/js/moments/controllers/complete.controller.js" ></script>
+  <script src="/js/moments/directives/comment.directive.js" ></script>
+  <script src="/js/moments/directives/comments.directive.js" ></script>
+  <script src="/js/moments/directives/like.directive.js" ></script>
+  <!-- users -->
+  <script src="/js/users/users.module.js" ></script>
+  <script src="/js/users/services/users.services.js" ></script>
+  <script src="/js/users/controllers/users.controller.js" ></script>
+  </body>
+</html>

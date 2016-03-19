@@ -1,0 +1,43 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	/*background-color: ;*/
+}
+
+.content{
+	width: 100%
+	height: auto;
+	background-color: #22264b;
+}
+
+.content h1{
+	color: white;	
+}
+
+.content button{
+	color: white;
+	background-color: rgba(26, 236, 255, 0.7);
+}
+
+/*.background.scroll-content {*/
+    /*background: url('../img/P1020736.jpg') center center cover no-repeat fixed; */
+	/* Location of the image */
+	/*background-image: url('../img/P1020736.jpg');*/
+
+	/* Background image is centered vertically and horizontally at all times */
+	/*background-position: center center;*/
+
+	/* Background image doesn't tile */
+	/*background-repeat: no-repeat;*/
+
+	/* Background image is fixed in the viewport so that it doesn't move when 
+	the content's height is greater than the image's height */
+	/*background-attachment: fixed;*/
+
+	/* This is what makes the background image rescale based
+	on the container's size */
+	/*background-size: cover;*/
+
+	/* Set a background color that will be displayed
+	while the background image is loading */
+	/*background-color: rgba(26, 236, 255);;*/
+/*}*/

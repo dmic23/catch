@@ -1,0 +1,22 @@
+.booth {
+	width: 420px;
+	background: #ccc;
+	border: 10px solid #ddd;
+	margin: 0 auto;
+}
+
+/*.booth-capture-button {
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	background: cornflowerblue;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}*/
+
+#canvas {
+/*	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	display: none;
+}

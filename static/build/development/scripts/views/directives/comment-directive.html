@@ -1,0 +1,9 @@
+<div class="row">
+	<button class="button" ng-click="vm.ShowCommentBox = ! vm.ShowCommentBox">Comment!</button>
+	<div class="u-full-width" ng-show="vm.ShowCommentBox">
+		<form novalidate>
+			<textarea class="u-full-width" placeholder="add a comment" ng-model="vm.comment.comment"></textarea>
+			<button class="button-primary" ng-click="addNewComment(vm.comment, moment.id)">Post Comment</button>
+		</form>
+	</div>
+</div>
